@@ -1,0 +1,133 @@
+
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.leftText h3 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 1.6rem 0;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+.home-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+}
+.home-container .leftText {
+  line-height: 50px;
+  position: absolute;
+  width: 27%;
+  top: 30%;
+  left: 5%;
+  letter-spacing: 1px;
+}
+.classic-cars-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: azure;
+  color: black;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.classic-cars-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+  background-color: #f0ffff;
+}
+.classic-cars-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+.leftText h4{
+    padding: 5px;
+    display: inline;
+    border-radius: 15px;
+    color: black;
+    background-color:azure ;
+}
+.right {
+  overflow: hidden;
+}
+.right .image img {
+  display: block;                
+  transform: translateX(100%);   
+  opacity: 0;                     
+  animation: slideIn 0.9s ease-out 0.2s forwards; 
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .right .image img {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.left {
+  overflow: hidden;
+}
+
+.left .leftText {
+  display: block;
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideIn 0.9s ease-out 0.2s forwards;
+}
+@media (max-width: 768px) {
+  .home-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .home-container .leftText {
+    position: relative;
+    width: auto;
+    top: auto;
+    left: auto;
+    margin: 12px;
+    transform: none;
+    opacity: 1;
+    animation: none;
+  }
+  .right .image img,
+  .left .leftText {
+    transform: none;
+    opacity: 1;
+    animation: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .leftText h3  {
+    font-size: 1.4rem;
+  }
+
+  .leftText h4 {
+    font-size: 0.9rem;
+    padding: 4px 6px;
+  }
+
+  .classic-cars-btn {
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+}

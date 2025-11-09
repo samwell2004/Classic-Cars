@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding-top: 60px;
+  padding-bottom: 60px;
+}
+.header {
+  position: fixed;
+  display: grid;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 70px;
+  background-color: rgb(43, 55, 65);
+  color: white;
+  font-size: larger;
+  justify-content: end;
+  align-items: center;
+  z-index: 100;
+  
+}
+.header-left {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 40px;
+  margin-top: 10px;
+}
+#Upic {
+  width: 40px;
+  margin-right: 5px;
+}
+#Student-Blog {
+  text-decoration: underline;
+  cursor: pointer;
+}
+a {
+  color: white;
+  margin-right: 5px;
+}
+
+.header-right {
+  position: absolute;
+  right: 50px;
+  gap: 5px;
+  font-size: medium;
+}
+
+.footer {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 70px;
+  background-color: rgb(43, 55, 65);
+  z-index: 100;
+}
+.footer-contant {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 20px;
+}

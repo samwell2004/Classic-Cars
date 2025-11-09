@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Policy - Simple Cars</title>
+       <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="policy.css" />
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-left">
+        <div>
+          <img
+            id="Upic"
+            alt="logo-of-thewebsite"
+            src="/logo.png"
+          />
+        </div>
+        <div id="Student-Blog"><a href="/home-page/Home.html">
+          Timeless Motors </a></div>
+      </div>
+
+      <div class="header-right">
+        <nav class="nav">
+          <ul>
+            <a href="/home-page/Home.html">Home</a>
+            <a href="/about-page/about.html">About</a>
+            <a href="/shop.car/shop.html">Shop</a>
+            <a href="/contact-page/contact.html
+            ">Contact</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="policy-wrap">
+      <h1>Site Policies — Classic Cars</h1>
+
+      <section class="policy-section">
+        <h2>Inspection & Condition</h2>
+        <p>
+          Classic cars are often sold as-is. We describe known issues and provide photos.
+          Buyers are encouraged to request a full inspection before purchase. Any additional
+          inspections arranged by the buyer are their responsibility unless agreed otherwise.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Shipping & Delivery</h2>
+        <p>
+          Shipping is available to many destinations. Shipping costs and timelines vary by
+          location. We can provide a shipping quote after the purchase is confirmed.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Payments & Deposits</h2>
+        <p>
+          We accept major payment methods. A deposit may be required to hold the vehicle.
+          Deposits are generally non-refundable unless a written agreement states otherwise.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Returns & Cancellations</h2>
+        <p>
+          Classic vehicles are typically final sale. If a problem arises that was not disclosed,
+          we will work with the buyer to find a fair solution. Please read the vehicle description
+          carefully before placing an order.
+        </p>
+      </section>
+
+      <section class="policy-section">
+        <h2>Privacy & Data</h2>
+        <p>
+          We collect only the information needed to complete a purchase or contact you about your
+          order (name, email, phone, location). We do not sell personal data. Payment details are
+          handled by the payment provider and are not stored on our site.
+        </p>
+      </section>
+
+      <hr />
+
+      <h2>Accept Policy</h2>
+      <p class="small">Please fill the short form below to acknowledge you read and accept the policies above.</p>
+
+      <form id="policyForm" class="policy-form">
+        <label for="pname">Full name</label>
+        <input id="pname" name="pname" type="text" required placeholder="Jane Doe" />
+
+        <label for="pemail">Email</label>
+        <input id="pemail" name="pemail" type="email" required placeholder="you@example.com" />
+
+        <label class="checkbox">
+          <input id="accept" name="accept" type="checkbox" required />
+          I have read and accept the site policies
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="btn confirm">Accept & Continue</button>
+          <a href="/post-pages/simple-car.html" class="btn back">Back</a>
+        </div>
+      </form>
+
+    </div>
+
+      <footer class="footer">
+      <div class="footer-contant">
+        <p>@ Timeless Motors</p>
+        <nav>
+            <a href="/about-page/about.html">About</a>
+            <a href="/contact-page/classic cars/classic cars/contact.html
+            ">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('policyForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = document.getElementById('pname').value || 'Customer';
+        if (!document.getElementById('accept').checked) {
+          alert('Please accept the policies to continue.');
+          return;
+        }
+        alert('Thanks, ' + name + '. Your acceptance has been recorded.');
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

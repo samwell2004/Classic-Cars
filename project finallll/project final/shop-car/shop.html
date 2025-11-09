@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Car Shop Grid</title>
+	   <link rel="stylesheet" href="/global.css">
+	<link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+	<header class="header">
+      <div class="header-left">
+        <div>
+          <img
+            id="Upic"
+            alt="logo-of-thewebsite"
+            src="/logo.png"
+          />
+        </div>
+        <div id="Student-Blog"><a href="/home-page/Home.html">
+          Timeless Motors </a></div>
+      </div>
+
+      <div class="header-right">
+        <nav class="nav">
+          <ul>
+            <a href="/home-page/Home.html">Home</a>
+            <a href="/about-page/about.html">About</a>
+            <a href="/shop.car/shop.html">Shop</a>
+            <a href="/contact-page/contact.html
+            ">Contact</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+		
+<div id="main-div">
+	<h1 id="car-h1">Car Shop</h1>
+	<div class="car-grid">
+
+		<section  class="car-card ">
+			<img src="images/pic.1.jpg" alt="Car 1">
+			<div class="car-info">
+				<p><strong>Model:</strong> Mustang</p>
+				<p><strong>Year:</strong> 2020</p>
+				<p><strong>Description:</strong> Classic American muscle car.</p>
+				<p><strong>Price:</strong> $30,000</p>
+			</div>
+			<a href="../post-pages/simple-car.html" onclick="showTab('car1')" class="see-more">See more...</a>
+		</section>
+
+
+		<section  class="car-card">
+			<img src="images/pic.2.jpg" alt="Car 2">
+			<div class="car-info">
+				<p><strong>Model:</strong> Camaro</p>
+				<p><strong>Year:</strong> 2019</p>
+				<p><strong>Description:</strong> Sporty and stylish coupe.</p>
+				<p><strong>Price:</strong> $28,000</p>
+			</div>
+			<a href="../post-pages/simple-car.html" class="see-more" onclick="showTab('car2')">See more...</a>
+		</section>
+
+
+		<section class="car-card ">
+			<img src="images/pic.3.jpg" alt="Car 3">
+			<div class="car-info">
+				<p><strong>Model:</strong> Charger</p>
+				<p><strong>Year:</strong> 2021</p>
+				<p><strong>Description:</strong> Powerful sedan with modern features.</p>
+				<p><strong>Price:</strong> $32,000</p>
+			</div>
+			<a href="../post-pages/simple-car.html" onclick="showTab('car3')"class="see-more">See more...</a>
+		</section>
+
+
+		<section class="car-card">
+			<img src="images/pic.4.jpg" alt="Car 4">
+			<div class="car-info">
+				<p><strong>Model:</strong> Corvette</p>
+				<p><strong>Year:</strong> 2018</p>
+				<p><strong>Description:</strong> Sleek sports car for speed lovers.</p>
+				<p><strong>Price:</strong> $45,000</p>
+			</div>
+			<a href="../post-pages/simple-car.html"  onclick="showTab('car4')"class="see-more">See more...</a>
+		</section>
+
+		<section  class="car-card ">
+			<img src="images/pic.5.jpg" alt="Car 5">
+			<div class="car-info">
+				<p><strong>Model:</strong> Supra</p>
+				<p><strong>Year:</strong> 2022</p>
+				<p><strong>Description:</strong> Japanese legend, fast and reliable.</p>
+				<p><strong>Price:</strong> $40,000</p>
+			</div>
+			<a href="../post-pages/simple-car.html" onclick="showTab('car5')"class="see-more">See more...</a>
+		</section>
+
+		<section class="car-card">
+			<img src="images/pic.6.jpg" alt="Car 6">
+			<div class="car-info">
+				<p><strong>Model:</strong> Skyline</p>
+				<p><strong>Year:</strong> 2017</p>
+				<p><strong>Description:</strong> Iconic car with racing heritage.</p>
+				<p><strong>Price:</strong> $38,000</p>
+			</div>
+			<a href="../post-pages/simple-car.html"onclick="showTab('car6')" class="see-more">See more...</a>
+		</section>
+	</div>
+</div>
+
+	  <footer class="footer">
+      <div class="footer-contant">
+        <p>@ Timeless Motors</p>
+        <nav>
+            <a href="/about-page/about.html">About</a>
+            <a href="/contact-page/classic cars/classic cars/contact.html
+            ">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+	<script>
+
+      function showTab(id) {
+        // Store the selected car ID in localStorage to pass to the next page
+        localStorage.setItem('selectedCar', id);
+      }
+	</script>
+</body>
+</html>
